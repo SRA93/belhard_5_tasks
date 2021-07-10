@@ -16,9 +16,14 @@ lets_else(10) -> 7
 
 def lets_else(range_val: int) -> int:
     counter = 0
-    # TODO Написать свой код здесь
-    return counter
+    current_val = range_val
 
+    for current_val in range(8):
+        counter += 1
+        if current_val == 7:
+          break
+    else:
+        return -5
 
 if __name__ == '__main__':
     assert lets_else(5) == -5

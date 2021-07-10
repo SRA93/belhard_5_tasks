@@ -22,9 +22,25 @@ from typing import Union
 
 
 def calculator(num1: int, num2: int, operation: str) -> Union[int, float, str]:
-    result = None
-    return result
 
+    x = num1
+    y = num2
+    oper = operation
+
+    if oper in ('+', '-', '*', 'no', '/'):
+        if oper == '+':
+            print('%.2f + %.2f = %.2f' % (x, y, x + y))
+        elif oper == '-':
+            print('%.2f - %.2f = %.2f' % (x, y, x - y))
+        elif oper == '*':
+            print('%.2f * %.2f = %.2f' % (x, y, x * y))
+        elif oper == 'no':
+            print('Неизвестная операция')
+        elif oper == '/':
+            if y != 0:
+                print('%.2f / %.2f = %.2f' % (x, y, x / y))
+
+    return
 
 if __name__ == '__main__':
     num1_val = int(input('Введите первое число: '))

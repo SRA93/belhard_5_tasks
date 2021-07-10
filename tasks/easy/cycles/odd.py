@@ -18,9 +18,12 @@ some_list1 = []
 
 
 def odd_in_list(some_list: list) -> list:
-    odd_list = []
-    # TODO Написать свой код здесь
-    return odd_list
+
+       x for x in some_list:
+            if (x % 2) != int:
+               continue
+
+        return odd_list
 
 
 if __name__ == '__main__':
