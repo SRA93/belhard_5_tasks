@@ -10,8 +10,10 @@ odd - нечетные
 
 
 def calc_even_odd(array: list) -> tuple:
-    even = None
-    odd = None
+
+    even = len([x for x in array if x % 2 == 0])
+    odd = len([x for x in array if x % 2 != 0])
+
     return even, odd
 
 

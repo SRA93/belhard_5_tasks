@@ -13,7 +13,6 @@ lets_break(-5) -> 15
 lets_break(5) -> 5
 lets_break(20) -> ValueError
 """
-from pyflakes.checker import counter
 
 
 def lets_break(n: int) -> int:
@@ -27,15 +26,15 @@ def lets_break(n: int) -> int:
     """
     if n > 10:
         raise ValueError("Начальное значение больше 10")
-    # Текущее значение
+        # Текущее значение
     current_value = n
     # Счетчик итераций
     counter = 0
     while True:
-      if current_value >= 10:
-          break
-      current_value += 1
-      counter += 1
+        if current_value >= 10:
+            break
+        current_value += 1
+        counter += 1
     return counter
 
 

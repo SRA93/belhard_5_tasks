@@ -17,7 +17,7 @@ def min_in_list(some_list: list) -> int:
     min_value = some_list[0]
     for val in some_list[1:]:
         if val < min_value:
-                min_value = val
+            min_value = val
     return min_value
 
 

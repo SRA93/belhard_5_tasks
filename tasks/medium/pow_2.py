@@ -13,7 +13,8 @@ is_pow_2(17) -> False
 
 
 def is_pow_2(number) -> bool:
-    return None
+    result = (number != 0) and (number & (number - 1) == 0)
+    return result
 
 
 if __name__ == '__main__':

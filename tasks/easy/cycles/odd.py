@@ -19,11 +19,16 @@ some_list1 = []
 
 def odd_in_list(some_list: list) -> list:
 
-       x for x in some_list:
-            if (x % 2) != int:
-               continue
+    some_list1 = []
 
-        return odd_list
+    for x in some_list:
+        if not isinstance(x, int) or isinstance(x, bool):
+            continue
+        elif x % 2 != 0:
+            continue
+        else:
+            some_list1.append(x)
+    return some_list1
 
 
 if __name__ == '__main__':

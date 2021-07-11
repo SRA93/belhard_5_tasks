@@ -7,6 +7,7 @@
 
 
 def not_3(array: list) -> list:
+    array = [x for x in array if x % 3 != 0]
     return array
 
 
